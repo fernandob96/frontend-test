@@ -1,18 +1,32 @@
 <template>
-    <div>
+    <div class="position-fixed p-2 cont-header w-100">
     <b-nav>
-        <b-nav-item active>Active</b-nav-item>
-        <b-nav-item>Link</b-nav-item>
-        <b-nav-item>Another Link</b-nav-item>
-        <b-nav-item disabled>Disabled</b-nav-item>
+        <b-nav-item>
+            <n-link to="/">Home</n-link>
+        </b-nav-item>
+        <b-nav-item>
+            <n-link to="/focusable-input">Input components</n-link>
+        </b-nav-item>
+        <b-nav-item>
+            <n-link to="/voting-list/5">Voting List</n-link>
+        </b-nav-item>
+        <b-nav-item>
+            <n-link to="/register-form">Register Form</n-link>
+        </b-nav-item>
     </b-nav>
     </div>
 </template>
+<style>
+.cont-header{
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(230,230,230,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(230,230,230,1);
+    box-shadow: 0px 3px 5px 0px rgba(230,230,230,1);
+    top: 0;
 
-<script>
-
-export default {
-
+    z-index: 9999999;
 }
-</script>
+.cont-header a{
+    text-decoration: none!important;
+}
+</style>
 

@@ -1,16 +1,16 @@
 <template>
         <b-col cols="12" lg="10" xl="8" class="mt-3 mx-auto">
             <div class="w-100 text-center">
-                <RegisterForm />
+                <FocusableTextInput />
             </div>
         </b-col>
 </template>
 <script>
-import RegisterForm from './../../components/forms/RegisterForm'
+import FocusableTextInput from './../../components/fields/FocusableTextInput'
 
 export default {
     components: {
-        RegisterForm
+        FocusableTextInput
     }
 }
 </script>

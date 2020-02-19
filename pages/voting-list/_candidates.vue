@@ -80,13 +80,9 @@
 </template>
 
 <script>
-import Header from './../../components/modules/Header'
 
 
 export default {
-  components: {
-      Header
-  },
   data(){
     return{
 
