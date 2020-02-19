@@ -1,6 +1,6 @@
 <template>
   <b-container class="p-5">
-      <div>
+      <div class="w-100">
         <h1 class="title my-5">
           {{$route.params.candidates}} candidates
         </h1>
@@ -80,8 +80,13 @@
 </template>
 
 <script>
+import Header from './../../components/modules/Header'
+
 
 export default {
+  components: {
+      Header
+  },
   data(){
     return{
 
@@ -105,6 +110,7 @@ export default {
 
       names:["Billy", "Caleb", "Clayton", "Shane", "Melissa", "Danielle", "Priscilla", "Rosemary", "Alfred", "Stacey", "Ana", "Kaylee", "Norman", "Bobby"],
       lastnames:["Lewis", "Lawrence", "Ramirez", "Johnson", "Torres", "Martinez", "Garcia", "Sanchez", "Hernandez", "Bennett", "Morales", "Holland", "Lee", "Collins"]
+      
     }
   },
   watch: {

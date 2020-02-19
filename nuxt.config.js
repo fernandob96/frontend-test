@@ -28,6 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~plugins/mask.js" },
+    { src: "~plugins/vuelidate.js" }
   ],
   /*
   ** Nuxt.js dev-modules

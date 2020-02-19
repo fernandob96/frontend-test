@@ -8,14 +8,12 @@
           <!-- Frontend Test -->
         </h3>
         <div class="links">
-          <a
-            href="https://nuxtjs.org/"
-            class="button--grey"
-          >
-            Voting List
-          </a>
-
-          <n-link to="/about" prefetch>About page pre-fetched</n-link>
+          <n-link to="/" prefetch class="button--grey" >Input components</n-link>
+          <n-link to="/voting-list/5" prefetch class="button--grey" >Voting List*</n-link>
+          <n-link to="/register-form" prefetch class="button--grey" >Register Form</n-link>
+        </div>
+        <div class="p-2 my-2">
+          <p class="m-0">*The default value of the voting list is 5, change the parameter using the URl.</p>
         </div>
       </div>
   </b-container>
@@ -58,5 +56,9 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+p{
+  color: #35495e;
 }
 </style>
