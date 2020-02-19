@@ -1,18 +1,15 @@
 <template>
     <div class="position-fixed p-2 cont-header w-100">
     <b-nav>
-        <b-nav-item>
-            <n-link to="/">Home</n-link>
-        </b-nav-item>
-        <b-nav-item>
-            <n-link to="/focusable-input">Input components</n-link>
-        </b-nav-item>
-        <b-nav-item>
-            <n-link to="/voting-list/5">Voting List</n-link>
-        </b-nav-item>
-        <b-nav-item>
-            <n-link to="/register-form">Register Form</n-link>
-        </b-nav-item>
+        
+        <n-link to="/" class="p-0 m-2">Home</n-link>
+    
+        <n-link to="/focusable-input" class="p-0 m-2">Input components</n-link>
+
+        <n-link to="/voting-list/5" class="p-0 m-2">Voting List</n-link>
+
+        <n-link to="/register-form" class="p-0 m-2">Register Form</n-link>
+ 
     </b-nav>
     </div>
 </template>
