@@ -2,10 +2,10 @@
   <b-container>
       <div>
         <h1 class="title">
-          <!-- Fernando Benavides Rodriguez -->
+          Fernando Benavides Rodriguez
         </h1>
         <h3 class="subtitle">
-          <!-- Frontend Test -->
+          Frontend Test
         </h3>
         <div class="links">
           <n-link to="/focusable-input" prefetch class="button--grey" >Input components</n-link>

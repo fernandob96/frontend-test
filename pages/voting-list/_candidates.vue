@@ -1,11 +1,15 @@
 <template>
   <b-container class="p-5">
       <div class="w-100">
-        <h1 class="title my-5">
+        <h1 class="title my-5" v-if="$route.params.candidates>=1">
           {{$route.params.candidates}} candidates
         </h1>
 
-        <b-row>
+        <h1 class="title my-5" v-if="$route.params.candidates<=0">
+          The number of candidates must be greater than 0
+        </h1>
+
+        <b-row v-if="$route.params.candidates>=1">
           <b-col cols="12" md="6">
             <p class="candidate-title mb-3"> Candidates (Original array) </p>
             <b-row v-for="(candidate, index) in candidates" :key="index" class="cont-candidate">
